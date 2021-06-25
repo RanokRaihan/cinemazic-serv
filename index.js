@@ -46,4 +46,4 @@ app.get("/", (req, res) => {
   res.send("server is running");
 });
 const port = 5000;
-app.listen(port);
+app.listen(process.env.PORT || port);
